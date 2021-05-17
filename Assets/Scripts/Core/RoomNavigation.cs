@@ -11,8 +11,9 @@ public class RoomNavigation : MonoBehaviour
     private Dictionary<string, Room> exitDictionary = new Dictionary<string, Room>();
     private GameController controller;
 
-    [FormerlySerializedAs("inputColor")] [FormerlySerializedAs("textColor")] [SerializeField] private Color32 inputColor_correct;
-    [FormerlySerializedAs("inputColor")] [FormerlySerializedAs("textColor")] [SerializeField] private Color32 inputColor_incorrect;
+    public Color32 inputColor_correct;
+    public Color32 inputColor_incorrect;
+    public Color32 inputColor;
     
     private void Awake()
     {
@@ -24,7 +25,7 @@ public class RoomNavigation : MonoBehaviour
         for (int i = 0; i < currentRoom.exits.Length; i++)
         {
             exitDictionary.Add(currentRoom.exits[i].keyString, currentRoom.exits[i].valueRoom);
-            controller.interactionDescriptionsInRoom.Add("\n" + currentRoom.exits[i].exitDescription);
+            controller.interactionDescriptionsInRoom.Add( currentRoom.exits[i].exitDescription);
         }
     }
 

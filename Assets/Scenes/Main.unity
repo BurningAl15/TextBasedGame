@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 31.791}
-  m_SizeDelta: {x: 0, y: 63.58255}
+  m_AnchoredPosition: {x: 0, y: 34}
+  m_SizeDelta: {x: -68, y: 66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &181664117
 MonoBehaviour:
@@ -372,6 +372,7 @@ GameObject:
   - component: {fileID: 193171900}
   - component: {fileID: 193171899}
   - component: {fileID: 193171902}
+  - component: {fileID: 193171903}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -398,6 +399,9 @@ MonoBehaviour:
   inputColor_incorrect:
     serializedVersion: 2
     rgba: 4278196223
+  inputColor:
+    serializedVersion: 2
+    rgba: 4294951680
 --- !u!114 &193171900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,8 +417,10 @@ MonoBehaviour:
   displayText: {fileID: 851779168}
   inputActions:
   - {fileID: 11400000, guid: 14cec745a681bc14fa1545946d26d7a7, type: 2}
+  - {fileID: 11400000, guid: 22b304250bcdb48449e93ed766f5655a, type: 2}
   roomNavigation: {fileID: 0}
   interactionDescriptionsInRoom: []
+  interactableItems: {fileID: 0}
 --- !u!4 &193171901
 Transform:
   m_ObjectHideFlags: 0
@@ -442,6 +448,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputField: {fileID: 181664117}
+--- !u!114 &193171903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193171898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432dd62547f3c1a4a97862b63f70e1c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nounsInRoom: []
 --- !u!1 &484641627
 GameObject:
   m_ObjectHideFlags: 0

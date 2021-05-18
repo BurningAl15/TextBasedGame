@@ -73,6 +73,11 @@ public class GameController : MonoBehaviour
                 {
                     interactableItems.examineDictionary.Add(interactableInRoom.noun,interaction.textResponse);
                 }
+                
+                if (interaction.InputAction.keyWord == "take")
+                {
+                    interactableItems.takeDictionary.Add(interactableInRoom.noun,interaction.textResponse);
+                }
             }
         }
     }
@@ -81,10 +86,10 @@ public class GameController : MonoBehaviour
     {
         if (verbDictionary.ContainsKey(noun))
         {
-            return StringUtils.ToHexadecimal("> " + verbDictionary[noun],roomNavigation.inputColor_correct);
+            return StringUtils.ToHexadecimal("> " + verbDictionary[noun],MessageColors._instance.Correct_Color);
         }
 
-        return StringUtils.ToHexadecimal("> You can't " + verb + " " + noun,roomNavigation.inputColor_incorrect);
+        return StringUtils.ToHexadecimal("> You can't " + verb + " " + noun,MessageColors._instance.Incorrect_Color);
     }
     
     void ClearCollectionsForNewRoom()

@@ -11,9 +11,9 @@ public class RoomNavigation : MonoBehaviour
     private Dictionary<string, Room> exitDictionary = new Dictionary<string, Room>();
     private GameController controller;
 
-    public Color32 inputColor_correct;
-    public Color32 inputColor_incorrect;
-    public Color32 inputColor;
+    // public Color32 inputColor_correct;
+    // public Color32 inputColor_incorrect;
+    // public Color32 inputColor;
     
     private void Awake()
     {
@@ -34,12 +34,12 @@ public class RoomNavigation : MonoBehaviour
         if (exitDictionary.ContainsKey(directionNoun))
         {
             currentRoom = exitDictionary[directionNoun];
-            controller.LogStringWithReturn(StringUtils.ToHexadecimal("> You head off to the " + directionNoun, inputColor_correct));
+            controller.LogStringWithReturn(StringUtils.ToHexadecimal("> You head off to the " + directionNoun, MessageColors._instance.Correct_Color));
             controller.DisplayRoomText();
         }
         else
         {
-            controller.LogStringWithReturn(StringUtils.ToHexadecimal("> There is no path to the " + directionNoun, inputColor_incorrect));
+            controller.LogStringWithReturn(StringUtils.ToHexadecimal("> There is no path to the " + directionNoun, MessageColors._instance.Incorrect_Color));
         }
     }
 

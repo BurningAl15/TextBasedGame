@@ -20,7 +20,7 @@ public class TextInput : MonoBehaviour
     void AcceptStringInput(string userInput)
     {
         userInput = userInput.ToLower();
-        controller.LogStringWithReturn(StringUtils.ToHexadecimal(userInput,_roomNavigation.inputColor));
+        controller.LogStringWithReturn(StringUtils.ToHexadecimal(userInput,MessageColors._instance.Input_Color));
 
         char[] delimiterCharacters = {' '};
         string[] separatedInputWords = userInput.Split(delimiterCharacters);

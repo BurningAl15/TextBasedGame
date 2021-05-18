@@ -31,6 +31,16 @@ public class InteractableItems : MonoBehaviour
         return null;
     }
 
+    public void DisplayInventory()
+    {
+        controller.LogStringWithReturn(StringUtils.ToHexadecimal("> You look in your backpack, inside you have: ",MessageColors._instance.Correct_Color));
+
+        for (int i = 0; i < nounsInInventory.Count; i++)
+        {
+            controller.LogStringWithReturn(StringUtils.ToHexadecimal(i +") "+nounsInInventory[i],MessageColors._instance.Inventory_Color));
+        }
+    }
+
     public void ClearCollections()
     {
         examineDictionary.Clear();

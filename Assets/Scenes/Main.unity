@@ -411,6 +411,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 14cec745a681bc14fa1545946d26d7a7, type: 2}
   - {fileID: 11400000, guid: 22b304250bcdb48449e93ed766f5655a, type: 2}
   - {fileID: 11400000, guid: 0d742beebb30974499ba4d7f83691728, type: 2}
+  - {fileID: 11400000, guid: dab43b6cfac37ec48b2307693784e636, type: 2}
   roomNavigation: {fileID: 0}
   interactionDescriptionsInRoom: []
   interactableItems: {fileID: 0}
@@ -475,6 +476,9 @@ MonoBehaviour:
   inputColor:
     serializedVersion: 2
     rgba: 4294951680
+  inputColor_inventory:
+    serializedVersion: 2
+    rgba: 4294901925
 --- !u!1 &484641627
 GameObject:
   m_ObjectHideFlags: 0

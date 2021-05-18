@@ -412,6 +412,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 22b304250bcdb48449e93ed766f5655a, type: 2}
   - {fileID: 11400000, guid: 0d742beebb30974499ba4d7f83691728, type: 2}
   - {fileID: 11400000, guid: dab43b6cfac37ec48b2307693784e636, type: 2}
+  - {fileID: 11400000, guid: 6c04debe02258ee4fb6d1a5023f6eea4, type: 2}
   roomNavigation: {fileID: 0}
   interactionDescriptionsInRoom: []
   interactableItems: {fileID: 0}
@@ -454,6 +455,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432dd62547f3c1a4a97862b63f70e1c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usableItemList:
+  - {fileID: 11400000, guid: 7947f2c8ed933f54893cfdaae0b7baa8, type: 2}
   nounsInRoom: []
 --- !u!114 &193171904
 MonoBehaviour:
